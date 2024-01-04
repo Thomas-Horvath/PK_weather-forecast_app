@@ -1,6 +1,19 @@
 body {
   background: #b2cff1;
+
+
+  height: 100vh;
+  text-align: center;
+}
+#root {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.elorejelzes {
+  max-width: 1000px;
+  height: 400px;
+ text-align: center;
+
 }
