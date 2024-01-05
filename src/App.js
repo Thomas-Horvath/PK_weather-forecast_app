@@ -1,4 +1,5 @@
 import './App.css';
+
 import React, { useState } from 'react';
 import VarosUrlap from './Components/VarosUrlap/VarosUrlap';
 import Elorejelzes from './Components/Elorejelzes/Elorejelzes';
@@ -15,7 +16,7 @@ export default function App() {
       .then((response) => {
         setIdojarasInfo({
           varos,
-          idojaras:response
+          idojaras: response
         });
       });
   }
