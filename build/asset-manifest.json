@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PK_weather-forecast_app/static/css/main.3fb59d65.css",
+    "main.js": "/PK_weather-forecast_app/static/js/main.9f361acf.js",
+    "index.html": "/PK_weather-forecast_app/index.html",
+    "main.3fb59d65.css.map": "/PK_weather-forecast_app/static/css/main.3fb59d65.css.map",
+    "main.9f361acf.js.map": "/PK_weather-forecast_app/static/js/main.9f361acf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fb59d65.css",
+    "static/js/main.9f361acf.js"
+  ]
+}
