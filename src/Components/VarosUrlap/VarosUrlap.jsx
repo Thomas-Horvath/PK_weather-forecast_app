@@ -1,5 +1,4 @@
 import React from "react";
-import './VarosUrlap.css';
 import { Form, FormGroup, Input, Button, Label } from "reactstrap"
 
 export default function VarosUrlap({ updateVaros }) {
@@ -17,9 +16,9 @@ export default function VarosUrlap({ updateVaros }) {
     };
 
     return (
-        <Form onSubmit={handleSubmit} className="m-4">
+        <Form onSubmit={handleSubmit} className="m-5">
             <FormGroup>
-                <Label for="varosInput"> Város </Label>
+                <Label for="varosInput" > Város </Label>
                 <Input
                     type="text"
                     name='varos'

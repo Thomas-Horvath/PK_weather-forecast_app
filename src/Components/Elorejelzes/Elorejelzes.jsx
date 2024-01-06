@@ -10,7 +10,7 @@ export default function Elorejelzes({ idojarasInfo }) {
     const SorokJsx = [];
     for (let i = 0; i < 7; i++) {
         SorokJsx.push(
-            <tr>
+            <tr key = { idojarasInfo.varos.id + napiAdatok.time[i]}>
                 <th scope="row">
                     {napiAdatok.time[i]}
                 </th>

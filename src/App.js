@@ -1,5 +1,3 @@
-import './App.css';
-
 import React, { useState } from 'react';
 import VarosUrlap from './Components/VarosUrlap/VarosUrlap';
 import Elorejelzes from './Components/Elorejelzes/Elorejelzes';
