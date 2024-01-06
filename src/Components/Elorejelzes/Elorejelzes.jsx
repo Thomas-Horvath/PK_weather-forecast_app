@@ -5,9 +5,32 @@ export default function Elorejelzes({ idojarasInfo }) {
     if (idojarasInfo === null) {
         return <div>Válassz egy várost!</div>
     }
+    const napiAdatok = idojarasInfo.idojaras.daily;
+    const mertekegysegek = idojarasInfo.idojaras.daily_units;
+    const SorokJsx = [];
+    for (let i = 0; i < 7; i++) {
+        SorokJsx.push(
+            <tr>
+                <th scope="row">
+                    {napiAdatok.time[i]}
+                </th>
+                <td>
+                    {napiAdatok.temperature_2m_min[i]}  {mertekegysegek.temperature_2m_min}
+                </td>
+                <td>
+                    {napiAdatok.temperature_2m_max[i]} {mertekegysegek.temperature_2m_max}
+                </td>
+                <td>
+                    {napiAdatok.rain_sum[i]} {mertekegysegek.rain_sum}
+                </td>
+            </tr>
+        )
+    }
+   
+
     return (
         <div className="elorejelzes">
-            {JSON.stringify(idojarasInfo)}
+           {/*  {JSON.stringify(idojarasInfo)} */}
             <Table
                 dark
                 hover
@@ -17,62 +40,21 @@ export default function Elorejelzes({ idojarasInfo }) {
                 <thead>
                     <tr>
                         <th>
-                            #
+                            Dátum
                         </th>
                         <th>
-                            First Name
+                            Minimum hőmérséklet
                         </th>
                         <th>
-                            Last Name
+                            Maximum hőmérséklet
                         </th>
                         <th>
-                            Username
+                            Csapadék
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">
-                            1
-                        </th>
-                        <td>
-                            Mark
-                        </td>
-                        <td>
-                            Otto
-                        </td>
-                        <td>
-                            @mdo
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            2
-                        </th>
-                        <td>
-                            Jacob
-                        </td>
-                        <td>
-                            Thornton
-                        </td>
-                        <td>
-                            @fat
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            3
-                        </th>
-                        <td>
-                            Larry
-                        </td>
-                        <td>
-                            the Bird
-                        </td>
-                        <td>
-                            @twitter
-                        </td>
-                    </tr>
+                   {SorokJsx}
                 </tbody>
             </Table>
         </div>
