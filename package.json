@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "homepage": "https://github.com/Thomas-Horvath/PK_weather-forecast_app"
+
   },
   "eslintConfig": {
     "extends": [
